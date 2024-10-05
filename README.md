@@ -5,81 +5,82 @@
 ![WordPress Plugin Rating](https://img.shields.io/wordpress/plugin/rating/sje-simple-json-editor?style=flat-square)
 ![WordPress Plugin Active Installs](https://img.shields.io/wordpress/plugin/installs/sje-simple-json-editor?style=flat-square)
 
-SJE (Simple JSON Editor) est un éditeur JSON élégant et facile à utiliser pour vos fichiers de thème WordPress.
+SJE (Simple JSON Editor) is an elegant and easy-to-use JSON editor for your WordPress theme files.
 
 ## Description
 
-SJE simplifie l'édition des fichiers JSON dans vos thèmes WordPress. Que vous soyez un développeur expérimenté ou un débutant, SJE vous offre une interface intuitive pour manipuler vos données JSON directement depuis le tableau de bord WordPress.
+SJE simplifies the editing of JSON files in your WordPress themes. Whether you're an experienced developer or a beginner, SJE offers you an intuitive interface to manipulate your JSON data directly from the WordPress dashboard.
 
-### Caractéristiques principales
+### Key Features
 
-- Interface utilisateur intuitive et élégante
-- Coloration syntaxique pour une meilleure lisibilité
-- Validation en temps réel des fichiers JSON
-- Sauvegarde sécurisée des modifications
-- Compatible avec tous les thèmes WordPress
+- Intuitive and elegant user interface
+- Syntax highlighting for better readability
+- Real-time JSON file validation
+- Secure saving of modifications
+- Compatible with all WordPress themes
 
-SJE est l'outil parfait pour les développeurs de thèmes et les administrateurs de sites qui ont besoin de modifier régulièrement des fichiers de configuration JSON.
+SJE is the perfect tool for theme developers and site administrators who need to regularly modify JSON configuration files.
 
 ## Installation
 
 ### Via WordPress
 
-1. Recherchez "SJE - Simple JSON Editor" dans le menu 'Ajouter un nouveau plugin' de WordPress.
-2. Cliquez sur "Installer maintenant", puis sur "Activer".
+1. Search for "SJE - Simple JSON Editor" in the 'Add New Plugin' menu in WordPress.
+2. Click "Install Now" and then "Activate".
 
-### Installation manuelle
+### Manual Installation
 
-1. Téléchargez le fichier zip du plugin et décompressez-le.
-2. Uploadez le dossier `sje` dans le répertoire `/wp-content/plugins/` de votre site WordPress.
-3. Activez le plugin via le menu 'Plugins' dans WordPress.
+1. Download the plugin zip file and extract it.
+2. Upload the `sje` folder to the `/wp-content/plugins/` directory of your WordPress site.
+3. Activate the plugin through the 'Plugins' menu in WordPress.
 
-## Utilisation
+## Usage
 
-Après l'activation, accédez à l'éditeur via le menu 'Outils > SJE' dans votre tableau de bord WordPress.
+After activation, access the editor via the 'Tools > SJE' menu in your WordPress dashboard.
 
 ## FAQ
 
-**Q: Puis-je utiliser SJE pour éditer d'autres types de fichiers ?**
+**Q: Can I use SJE to edit other types of files?**
 
-R: Non, SJE est spécifiquement conçu pour l'édition de fichiers JSON. Pour d'autres types de fichiers, veuillez utiliser l'éditeur de fichiers intégré à WordPress ou un plugin dédié.
+A: No, SJE is specifically designed for editing JSON files. For other file types, please use the built-in WordPress file editor or a dedicated plugin.
 
-**Q: Est-ce que SJE sauvegarde automatiquement mes modifications ?**
+**Q: Does SJE automatically save my changes?**
 
-R: Non, SJE ne sauvegarde pas automatiquement. Vous devez cliquer sur le bouton "Sauvegarder" pour enregistrer vos modifications. Cela vous permet de vérifier vos changements avant de les appliquer.
+A: No, SJE does not auto-save. You must click the "Save Changes" button to save your modifications. This allows you to review your changes before applying them.
 
-## Captures d'écran
 
-Interface de SJE
-![Interface principale](assets/screenshot-1.png)
+## Screenshots
+
+SJE Interface
+![SJE Interface](assets/screenshot-1.png)
 
 ## Changelog
 
 ### 1.0.0
-- Première version publique
-- Interface utilisateur intuitive pour l'édition de fichiers JSON
-- Coloration syntaxique et validation en temps réel
-- Sauvegarde sécurisée des modifications
+- Initial public release
+- Intuitive user interface for JSON file editing
+- Syntax highlighting and real-time validation
+- Secure saving of modifications
 
-## Contribuer
+## Contributing
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## Licence
+## License
 
-Ce projet est sous licence GPL v2 ou ultérieure. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the GPL v2 or later. See the [LICENSE](LICENSE) file for details.
 
-## Auteur
+## Author
 
-Créé par [Paul Fleury](https://paulfleury.fr)
+Created by [Paul Fleury](https://paulfleury.fr)
 
-## Exemple d'utilisation
+## Usage Example
 
-Voici un exemple rapide de structure JSON que vous pouvez éditer avec SJE :
+Here's a quick example of a JSON structure you can edit with SJE:
 
 ```json
 {
-  "name": "Mon Super Thème",
+  "name": "My Awesome Theme",
   "version": "1.0.0",
   "author": "Paul Fleury",
   "settings": {
@@ -101,4 +102,4 @@ Voici un exemple rapide de structure JSON que vous pouvez éditer avec SJE :
 }
 ```
 
-Utilisez SJE pour éditer facilement ce type de structure directement depuis votre tableau de bord WordPress !
+Use SJE to easily edit this type of structure directly from your WordPress dashboard!

@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
     ajaxRequest('get_theme_directories', {}, function(directories) {
       folderSelect.empty().append($('<option>', {
         value: '',
-        text: '-- Sélectionnez un dossier --'
+        text: '-- Select a folder --'
       }));
       directories.forEach(function(dir) {
         folderSelect.append($('<option>', {
@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
 				});
 				jsonFileList.append(ul);
 			} else {
-				jsonFileList.append('<p>Aucun fichier JSON trouvé dans ce dossier.</p>');
+				jsonFileList.append('<p>No JSON files found in this folder.</p>');
 			}
 		});
 	}
@@ -108,9 +108,9 @@ jQuery(document).ready(function($) {
       file: currentFile,
       content: editor.getValue()
     }, function() {
-      alert('Fichier sauvegardé avec succès');
+      alert('File saved successfully');
     }, function() {
-      alert('Erreur lors de la sauvegarde du fichier');
+      alert('Error saving file');
     });
   }
 

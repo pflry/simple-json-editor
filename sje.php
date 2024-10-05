@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: SJE - Simple JSON Editor
- * Plugin URI: https://paulfleury.fr/sje-plugin
- * Description: Un éditeur JSON simple et élégant pour votre thème actif.
+ * Plugin URI: https://github.com/pflry/simple-json-editor
+ * Description: An elegant and easy-to-use JSON editor for your WordPress theme files
  * Version: 1.0
  * Author: Paul Fleury
  * Author URI: https://paulfleury.fr

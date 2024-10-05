@@ -3,12 +3,12 @@
     <h1 class="titre">SJE - Simple JSON Editor</h1>
     <div class="actions">
       <div>
-        <label for="folder-select">Sélectionnez un dossier :</label>
+        <label for="folder-select">Select a folder:</label>
         <select id="folder-select">
-          <option value="">-- Sélectionnez un dossier --</option>
+          <option value="">-- Select a folder --</option>
         </select>
       </div>
-      <button id="save-json" class="button button-primary button-save">Sauvegarder</button>
+      <button id="save-json" class="button button-primary button-save">Save Changes</button>
     </div>
   </div>
   

@@ -21,10 +21,10 @@ class SJE {
 
   public function add_admin_menu() {
     add_management_page(
-      __('SJE - Simple JSON Editor', 'sje'), // Titre de la page
-      __('Simple JSON Editor', 'sje'), // Titre du menu
-      'manage_options', // Capacité requise
-      'sje', // Slug du menu
+      'SJE - Simple JSON Editor',
+      'Simple JSON Editor',
+      'manage_options',
+      'sje',
       array($this, 'render_admin_page'), // Fonction de rappel pour afficher la page
       99 // Position dans le menu (optionnel)
     );
