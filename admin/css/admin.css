@@ -1,0 +1,122 @@
+:root {
+	--color-bg-header: #f6f8fa;
+	--color-text: #1f2328;
+	--color-border: #d1d9e0;
+	--color-primary: #1f883d;
+	--color-primary-dark: #0c6c27;
+	--color-bg-editor: #24292e;
+	--color-active: #fd8c73;
+}
+
+/* svg icons */
+.icon {
+	width: 24px;
+	height: auto;
+	vertical-align: text-bottom;
+}
+
+/* layout */
+body.tools_page_sje {
+	background-color: #fff;
+	color: var(--color-text);
+	font-size: 15px;
+}
+
+.json-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: -20px;
+}
+
+/* header */
+.json-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 24px;
+	background-color: var(--color-bg-header);
+	border-bottom: solid 1px var(--color-border);
+}
+
+.json-header .titre {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.json-header .actions {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.json-header .button-primary {
+	padding: 4px 12px;
+	background: var(--color-primary);
+	border-color: var(--color-primary);
+	border-radius: 6px;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+.json-header .button-primary:hover {
+	background: var(--color-primary-dark);
+	border-color: var(--color-primary-dark);
+}
+
+/* body grid */
+.json-grid {
+	display: grid;
+	grid-template-columns: 250px calc(100% - 255px);
+	align-items: stretch;
+	height: calc(100vh - 135px);
+	border-bottom: solid 1px var(--color-border);
+}
+
+/* files list */
+.json-list-files {
+	padding: 0;
+	background-color: var(--color-bg-header);
+	border-right: solid 1px var(--color-border);
+}
+
+.json-list-files ul {
+	margin: 0;
+}
+
+.json-file-item {
+	margin: 0;
+}
+
+.json-file-item a {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	padding: 12px;
+	background-color: var(--color-bg-header);
+	border-bottom: solid 1px var(--color-border);
+	color: inherit;
+	text-decoration: none;
+}
+
+.json-file-item a:focus,
+.json-file-item a:active {
+	box-shadow: none;
+}
+
+.json-file-item a.is-active {
+	background-color: #fff;
+	border-bottom: solid 2px var(--color-active);
+	color: #000;
+	box-shadow: none;
+}
+
+/* code editor */
+.code-editor {
+	width: 100%;
+	height: 100%;
+}
