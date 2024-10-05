@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
   const folderSelect = $('#folder-select');
   const jsonFileList = $('#json-file-list');
   const jsonEditorContainer = $('.json-editor-container');
+  const jsonEditorInfos = $('.json-editor-infos');
 
   function initAceEditor() {
     const editorElement = document.getElementById("ace-editor");
@@ -98,9 +99,20 @@ jQuery(document).ready(function($) {
 			currentDirectory = directory;
 			editor.setValue(data.content);
 			editor.clearSelection();
-			jsonEditorContainer.show();
+      jsonEditorContainer.show();
+      jsonEditorInfos.hide();
 		});
-	}
+  }
+  
+  function resetEditor() {
+    jsonEditorContainer.hide();
+    jsonEditorInfos.show();
+    currentFile = '';
+    currentDirectory = '';
+    if (editor) {
+      editor.setValue('');
+    }
+  }
 
   function saveJsonFile() {
     ajaxRequest('save_json_file', {

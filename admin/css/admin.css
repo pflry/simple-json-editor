@@ -64,8 +64,7 @@ body.tools_page_sje {
 .json-brand .titre {
 	margin: 0;
 	font-size: 18px;
-	font-weight: 800;
-	text-transform: uppercase;
+	font-weight: 500;
 	padding: 0 16px;
 }
 
@@ -98,6 +97,14 @@ body.tools_page_sje {
 	align-items: stretch;
 	height: calc(100vh - 135px);
 	border-bottom: solid 1px var(--color-border);
+}
+
+.json-editor-infos {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
 }
 
 /* files list */
