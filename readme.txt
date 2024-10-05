@@ -48,9 +48,7 @@ Non, SJE ne sauvegarde pas automatiquement. Vous devez cliquer sur le bouton "Sa
 
 == Screenshots ==
 
-1. Interface principale de SJE
-2. Édition d'un fichier JSON avec coloration syntaxique
-3. Message de confirmation après sauvegarde réussie
+Interface de SJE
 
 == Changelog ==
 

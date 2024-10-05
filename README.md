@@ -50,14 +50,8 @@ R: Non, SJE ne sauvegarde pas automatiquement. Vous devez cliquer sur le bouton 
 
 ## Captures d'écran
 
-1. Interface principale de SJE
-   ![Interface principale](assets/screenshot-1.png)
-
-2. Édition d'un fichier JSON avec coloration syntaxique
-   ![Édition de fichier](assets/screenshot-2.png)
-
-3. Message de confirmation après sauvegarde réussie
-   ![Confirmation de sauvegarde](assets/screenshot-3.png)
+Interface de SJE
+![Interface principale](assets/screenshot-1.png)
 
 ## Changelog
 
