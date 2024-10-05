@@ -23,6 +23,12 @@ SJE simplifies the editing of JSON files in your WordPress themes. Whether you'r
 
 SJE is the perfect tool for theme developers and site administrators who need to regularly modify JSON configuration files. By displaying only relevant folders, SJE streamlines your workflow and helps you focus on the JSON files that matter.
 
+## Credits
+
+SJE uses the following open-source software:
+
+- [ACE Editor](https://ace.c9.io/) - A high performance code editor for the web
+
 ## Installation
 
 ### Via WordPress

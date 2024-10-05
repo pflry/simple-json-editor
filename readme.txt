@@ -27,6 +27,12 @@ Key features:
 
 SJE is the perfect tool for theme developers and site administrators who need to regularly modify JSON configuration files.
 
+== Credits ==
+
+SJE uses the following open-source software:
+
+* [ACE Editor](https://ace.c9.io/) - A high performance code editor for the web
+
 == Installation ==
 
 1. Download the plugin zip file and extract it.
