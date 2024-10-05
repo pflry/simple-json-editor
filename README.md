@@ -18,8 +18,10 @@ SJE simplifies the editing of JSON files in your WordPress themes. Whether you'r
 - Real-time JSON file validation
 - Secure saving of modifications
 - Compatible with all WordPress themes
+- Smart folder display: only folders containing JSON files are shown in the selection menu
+- Easy navigation through your theme's JSON files
 
-SJE is the perfect tool for theme developers and site administrators who need to regularly modify JSON configuration files.
+SJE is the perfect tool for theme developers and site administrators who need to regularly modify JSON configuration files. By displaying only relevant folders, SJE streamlines your workflow and helps you focus on the JSON files that matter.
 
 ## Installation
 

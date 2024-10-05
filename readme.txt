@@ -14,12 +14,16 @@ SJE (Simple JSON Editor) is an elegant and easy-to-use JSON editor for your Word
 
 SJE (Simple JSON Editor) simplifies the editing of JSON files in your WordPress themes. Whether you're an experienced developer or a beginner, SJE offers you an intuitive interface to manipulate your JSON data directly from the WordPress dashboard.
 
+SJE streamlines your workflow by displaying only folders containing JSON files in the selection menu, helping you focus on the files that matter.
+
 Key features:
 * Intuitive and elegant user interface
 * Syntax highlighting for better readability
 * Real-time JSON file validation
 * Secure saving of modifications
 * Compatible with all WordPress themes
+* Smart folder display: only folders with JSON files are shown
+* Easy navigation through your theme's JSON files
 
 SJE is the perfect tool for theme developers and site administrators who need to regularly modify JSON configuration files.
 
@@ -45,6 +49,10 @@ No, SJE is specifically designed for editing JSON files. For other file types, p
 
 No, SJE does not auto-save. You must click the "Save" button to save your modifications. This allows you to review your changes before applying them.
 
+= Why do I only see some folders in the selection menu? =
+
+SJE intelligently displays only folders that contain JSON files. This helps streamline your workflow by focusing on relevant directories.
+
 == Screenshots ==
 
 SJE Interface
@@ -56,6 +64,7 @@ SJE Interface
 * Intuitive user interface for JSON file editing
 * Syntax highlighting and real-time validation
 * Secure saving of modifications
+* Smart folder display feature
 
 == Upgrade Notice ==
 
