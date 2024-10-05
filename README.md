@@ -50,6 +50,10 @@ A: No, SJE is specifically designed for editing JSON files. For other file types
 
 A: No, SJE does not auto-save. You must click the "Save Changes" button to save your modifications. This allows you to review your changes before applying them.
 
+**Q: Why do I only see some folders in the selection menu?**
+
+A: SJE intelligently displays only folders that contain JSON files. This helps streamline your workflow by focusing on relevant directories.
+
 
 ## Screenshots
 
