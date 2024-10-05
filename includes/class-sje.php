@@ -150,27 +150,38 @@ class SJE {
 	}
 
 	public function ajax_save_json_file() {
-		check_ajax_referer('sje_nonce', 'nonce');
-		
-		if (!current_user_can('manage_options')) {
-			wp_die('Unauthorized access');
-		}
-		
-		$directory = isset($_POST['directory']) ? sanitize_text_field($_POST['directory']) : '';
-		$file = isset($_POST['file']) ? sanitize_text_field($_POST['file']) : '';
-		$content = isset($_POST['content']) ? stripslashes($_POST['content']) : '';
-		
-		$file_path = $this->theme_directory . '/' . $directory . '/' . $file;
-		
-		if (pathinfo($file_path, PATHINFO_EXTENSION) == 'json') {
-			if (file_put_contents($file_path, $content) !== false) {
-				wp_send_json_success(array('message' => 'File saved successfully.'));
-			} else {
-				wp_send_json_error(array('message' => 'Failed to save file.'));
-			}
-		} else {
-			wp_send_json_error(array('message' => 'Invalid file type.'));
-		}
+    check_ajax_referer('sje_nonce', 'nonce');
+    
+    if (!current_user_can('manage_options')) {
+      wp_send_json_error(array('message' => 'Unauthorized access'));
+    }
+    
+    $directory = isset($_POST['directory']) ? sanitize_text_field($_POST['directory']) : '';
+    $file = isset($_POST['file']) ? sanitize_file_name($_POST['file']) : '';
+    $content = isset($_POST['content']) ? wp_unslash($_POST['content']) : '';
+    
+    // Validate JSON
+    json_decode($content);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+      wp_send_json_error(array('message' => 'Invalid JSON format'));
+    }
+    
+    $file_path = wp_normalize_path($this->theme_directory . '/' . $directory . '/' . $file);
+    
+    // Check if the file is within the theme directory
+    if (strpos($file_path, wp_normalize_path($this->theme_directory)) !== 0) {
+      wp_send_json_error(array('message' => 'Invalid file path'));
+    }
+    
+    if (pathinfo($file_path, PATHINFO_EXTENSION) !== 'json') {
+      wp_send_json_error(array('message' => 'Invalid file type'));
+    }
+    
+    if (file_put_contents($file_path, $content) !== false) {
+      wp_send_json_success(array('message' => 'File saved successfully'));
+    } else {
+      wp_send_json_error(array('message' => 'Failed to save file'));
+    }
 	}
 
 	private function starts_with_dot($string) {
