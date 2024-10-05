@@ -1,9 +1,13 @@
 <div class="json-wrapper">
   <div class="json-header">
-    <h1 class="titre">SJE - Simple JSON Editor</h1>
+    <div class="json-brand">
+      <div class="logo"><span>SJE</span></div>
+      <h1 class="titre">Simple JSON Editor</h1>
+    </div>
+    
     <div class="actions">
       <div>
-        <label for="folder-select">Select a folder:</label>
+        <label for="folder-select">Select a folder&nbsp;</label>
         <select id="folder-select">
           <option value="">-- Select a folder --</option>
         </select>
