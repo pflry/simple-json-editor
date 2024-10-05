@@ -6,7 +6,7 @@
  * Version: 1.0
  * Author: Paul Fleury
  * Author URI: https://paulfleury.fr
- * License: GPL2
+ * License: GPLv3
  * Text Domain: sje
  * Domain Path: /languages
  */

@@ -68,7 +68,7 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the GPL v2 or later. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GPL v3 or later. See the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.html) file for details.
 
 ## Author
 

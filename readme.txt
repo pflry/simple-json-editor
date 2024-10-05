@@ -5,8 +5,8 @@ Requires at least: 5.0
 Tested up to: 6.2
 Stable tag: 1.0.0
 Requires PHP: 7.2
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
 SJE (Simple JSON Editor) is an elegant and easy-to-use JSON editor for your WordPress theme files.
 
@@ -61,19 +61,3 @@ SJE Interface
 
 = 1.0.0 =
 First public version of SJE. Install it to start easily editing your JSON files!
-
-== Arbitrary section ==
-
-You can learn more about using JSON files in WordPress development on [the official WordPress website](https://developer.wordpress.org/themes/theme-json/).
-
-== A brief Markdown Example ==
-
-Here's a quick example of Markdown formatting you can use in your JSON files:
-
-`{
-  "name": "My Awesome Theme",
-  "version": "1.0.0",
-  "author": "Paul Fleury"
-}`
-
-Use SJE to easily edit this type of structure!
