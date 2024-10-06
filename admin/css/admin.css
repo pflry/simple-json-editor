@@ -33,10 +33,10 @@ body.tools_page_sje {
 /* header */
 .json-header {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	background-color: var(--color-bg-header);
+	justify-content: space-between;
 	border-bottom: solid 1px var(--color-border);
+	background-color: var(--color-bg-header);
 }
 
 /* branding */
@@ -46,15 +46,15 @@ body.tools_page_sje {
 }
 
 .json-brand .logo {
+	display: flex;
+	height: 63px;
+	align-items: center;
+	justify-content: center;
 	aspect-ratio: 1 / 1;
 	background-color: var(--color-active);
 	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 63px;
-	font-weight: 700;
 	font-size: 24px;
+	font-weight: 700;
 }
 
 .json-brand .logo span {
@@ -62,56 +62,56 @@ body.tools_page_sje {
 }
 
 .json-brand .titre {
+	padding: 0 16px;
 	margin: 0;
 	font-size: 18px;
 	font-weight: 500;
-	padding: 0 16px;
 }
 
 .json-header .actions {
 	display: flex;
 	align-items: center;
-	gap: 32px;
 	padding: 12px 24px;
+	gap: 32px;
 }
 
 .json-header .button-primary {
 	padding: 4px 12px;
-	background: var(--color-primary);
 	border-color: var(--color-primary);
 	border-radius: 6px;
+	background: var(--color-primary);
 	color: #fff;
 	font-weight: 600;
 	letter-spacing: 0.02em;
 }
 
 .json-header .button-primary:hover {
-	background: var(--color-primary-dark);
 	border-color: var(--color-primary-dark);
+	background: var(--color-primary-dark);
 }
 
 /* body grid */
 .json-grid {
 	display: grid;
-	grid-template-columns: 250px calc(100% - 255px);
-	align-items: stretch;
 	height: calc(100vh - 135px);
+	align-items: stretch;
 	border-bottom: solid 1px var(--color-border);
+	grid-template-columns: 250px calc(100% - 255px);
 }
 
 .json-editor-infos {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 	font-size: 16px;
+	text-align: center;
 }
 
 /* files list */
 .json-list-files {
 	padding: 0;
-	background-color: var(--color-bg-header);
 	border-right: solid 1px var(--color-border);
+	background-color: var(--color-bg-header);
 }
 
 .json-list-files ul {
@@ -125,12 +125,12 @@ body.tools_page_sje {
 .json-file-item a {
 	display: flex;
 	align-items: center;
-	gap: 4px;
 	padding: 12px;
-	background-color: var(--color-bg-header);
 	border-bottom: solid 1px var(--color-border);
-	text-decoration: none;
+	background-color: var(--color-bg-header);
 	color: #55585c;
+	gap: 4px;
+	text-decoration: none;
 }
 
 .json-file-item a:focus,
@@ -139,10 +139,10 @@ body.tools_page_sje {
 }
 
 .json-file-item a.is-active {
-	background-color: #fff;
 	border-bottom: solid 2px var(--color-active);
-	color: #000;
+	background-color: #fff;
 	box-shadow: none;
+	color: #000;
 }
 
 /* code editor */

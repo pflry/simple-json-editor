@@ -7,9 +7,12 @@
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "ace-builds": "^1.36.2",
-    "dir-archiver": "^2.1.0"
+    "dir-archiver": "^2.1.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-idiomatic-order": "^10.0.0"
   },
   "scripts": {
+    "lint": "stylelint admin/css/admin.css --fix --config .stylelintrc-css.json",
     "bundle": "dir-archiver --src . --dest ../simple-json-editor.zip --exclude .git .gitignore .postcssrc.json .stylelintrc-css.json package.json yarn.lock package-lock.json yarn-error.log node_modules"
   }
 }
