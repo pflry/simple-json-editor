@@ -64,7 +64,7 @@ A: SJE intelligently displays only folders that contain JSON files. This helps s
 ## Screenshots
 
 SJE Interface
-![SJE Interface](assets/screenshot-1.png)
+![SJE Interface](assets/images/screenshot-1.png)
 
 ## Changelog
 

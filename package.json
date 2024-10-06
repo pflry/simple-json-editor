@@ -1,0 +1,15 @@
+{
+  "name": "simple-json-editor",
+  "version": "1.0.0",
+  "description": "An elegant and easy-to-use JSON editor for your WordPress theme files",
+  "repository": "https://github.com/pflry/simple-json-editor",
+  "author": "Paul Fleury <hello@paulfleury.com>",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "ace-builds": "^1.36.2",
+    "dir-archiver": "^2.1.0"
+  },
+  "scripts": {
+    "bundle": "dir-archiver --src . --dest ../simple-json-editor.zip --exclude .git .gitignore .postcssrc.json .stylelintrc-css.json package.json yarn.lock package-lock.json yarn-error.log node_modules"
+  }
+}
