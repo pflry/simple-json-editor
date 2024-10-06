@@ -7,7 +7,7 @@
  * Author: Paul Fleury
  * Author URI: https://paulfleury.fr
  * License: GPLv3
- * Text Domain: simple-json-editor
+ * Text Domain: sje-simple-json-editor
  * Domain Path: /languages
  */
 

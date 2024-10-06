@@ -45,8 +45,8 @@ class SJE {
    */
   public function add_admin_menu() {
     add_management_page(
-      __('SJE - Simple JSON Editor', 'sje'),
-      __('Simple JSON Editor', 'sje'),
+      __('SJE - Simple JSON Editor', 'sje-simple-json-editor'),
+      __('Simple JSON Editor', 'sje-simple-json-editor'),
       'manage_options',
       'sje',
       array($this, 'render_admin_page'),
@@ -59,7 +59,7 @@ class SJE {
    */
   public function render_admin_page() {
     if (!current_user_can('manage_options')) {
-      wp_die(esc_html__('You do not have sufficient permissions to access this page.', 'sje'));
+      wp_die(esc_html__('You do not have sufficient permissions to access this page.', 'sje-simple-json-editor'));
     }
     require_once SJE_PLUGIN_DIR . 'admin/partials/admin-display.php';
   }
@@ -148,7 +148,7 @@ class SJE {
     check_ajax_referer('sje_nonce', 'nonce');
     
     if (!current_user_can('manage_options')) {
-      wp_send_json_error(array('message' => __('Unauthorized access', 'sje')));
+      wp_send_json_error(array('message' => __('Unauthorized access', 'sje-simple-json-editor')));
     }
     
     $directories = $this->get_theme_directories();
@@ -188,7 +188,7 @@ class SJE {
     check_ajax_referer('sje_nonce', 'nonce');
     
     if (!current_user_can('manage_options')) {
-      wp_send_json_error(array('message' => __('Unauthorized access', 'sje')));
+      wp_send_json_error(array('message' => __('Unauthorized access', 'sje-simple-json-editor')));
     }
     
     $directory = isset($_POST['directory']) ? sanitize_text_field(wp_unslash($_POST['directory'])) : '';
@@ -203,7 +203,7 @@ class SJE {
     check_ajax_referer('sje_nonce', 'nonce');
     
     if (!current_user_can('manage_options')) {
-      wp_send_json_error(array('message' => __('Unauthorized access', 'sje')));
+      wp_send_json_error(array('message' => __('Unauthorized access', 'sje-simple-json-editor')));
     }
     
     $directory = isset($_POST['directory']) ? sanitize_text_field(wp_unslash($_POST['directory'])) : '';
@@ -212,7 +212,7 @@ class SJE {
     $file_path = wp_normalize_path($this->theme_directory . '/' . $directory . '/' . $file);
     
     if (strpos($file_path, wp_normalize_path($this->theme_directory)) !== 0) {
-      wp_send_json_error(array('message' => __('Invalid file path', 'sje')));
+      wp_send_json_error(array('message' => __('Invalid file path', 'sje-simple-json-editor')));
     }
     
     if (file_exists($file_path) && pathinfo($file_path, PATHINFO_EXTENSION) == 'json') {
@@ -224,12 +224,12 @@ class SJE {
       
       $content = $wp_filesystem->get_contents($file_path);
       if ($content === false) {
-        wp_send_json_error(array('message' => __('Error reading file', 'sje')));
+        wp_send_json_error(array('message' => __('Error reading file', 'sje-simple-json-editor')));
       } else {
         wp_send_json_success(array('content' => $content));
       }
     } else {
-      wp_send_json_error(array('message' => __('File not found or not a JSON file', 'sje')));
+      wp_send_json_error(array('message' => __('File not found or not a JSON file', 'sje-simple-json-editor')));
     }
   }
 
