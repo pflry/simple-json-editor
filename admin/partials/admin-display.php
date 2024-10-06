@@ -20,6 +20,7 @@
     <div id="json-file-list" class="json-list-files">
       <!-- La liste des fichiers JSON sera injectée ici -->
     </div>
+    <div class="gutter-col gutter-col-1"></div>
     <div id="json-editor-infos" class="json-editor-infos">
       Select a directory in the top selector. Only directories containing json files are displayed.<br>Then click on the desired file in the left-hand column to edit it.
     </div>

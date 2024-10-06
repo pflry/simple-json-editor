@@ -7,6 +7,15 @@ jQuery(document).ready(function($) {
   const jsonEditorContainer = $('.json-editor-container');
   const jsonEditorInfos = $('.json-editor-infos');
 
+   // Initialisation de Split Grid
+  Split({
+    columnGutters: [{
+      track: 1,
+      element: document.querySelector('.gutter-col-1'),
+    }],
+    minSize: 200,
+  });
+  
   function initAceEditor() {
     const editorElement = document.getElementById("ace-editor");
     if (typeof ace !== 'undefined' && editorElement) {
@@ -18,12 +27,21 @@ jQuery(document).ready(function($) {
         useSoftTabs: true,
 				enableAutoIndent: true,
 				showPrintMargin: false,
-				wrap: 160
+				wrap: true
       });
     } else {
       console.error('Ace editor not loaded or target element not found');
     }
   }
+
+  function updateAceEditorSize() {
+    if (editor) {
+      editor.resize();
+    }
+  }
+
+  window.addEventListener('resize', updateAceEditorSize);
+  updateAceEditorSize();
 
   function ajaxRequest(action, data, successCallback, errorCallback) {
     $.ajax({

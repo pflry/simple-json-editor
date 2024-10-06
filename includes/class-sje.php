@@ -78,8 +78,10 @@ class SJE {
     
     wp_enqueue_script('ace-editor', SJE_PLUGIN_URL . 'vendor/ace/ace.js', array('jquery'), '1.4.12', true);
     wp_enqueue_script('ace-editor-github-dark-theme', SJE_PLUGIN_URL . 'vendor/ace/theme-github_dark.js', array('ace-editor'), '1.4.12', true);
+
+    wp_enqueue_script('split-grid', SJE_PLUGIN_URL . 'vendor/split/split-grid.min.js', array(), '1.0.11', true);
     
-    wp_enqueue_script('sje-admin-script', SJE_PLUGIN_URL . 'admin/js/admin.js', array('jquery', 'ace-editor', 'ace-editor-github-dark-theme'), SJE_VERSION, true);
+    wp_enqueue_script('sje-admin-script', SJE_PLUGIN_URL . 'admin/js/admin.js', array('jquery', 'ace-editor', 'ace-editor-github-dark-theme', 'split-grid'), SJE_VERSION, true);
     
     wp_localize_script('sje-admin-script', 'wpJsonEditor', array(
       'ajax_url' => admin_url('admin-ajax.php'),

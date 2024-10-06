@@ -3,7 +3,7 @@ Contributors: paulfleury
 Tags: json, editor, theme, development, code
 Requires at least: 5.0
 Tested up to: 6.6.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Requires PHP: 7.2
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -32,6 +32,7 @@ SJE is the perfect tool for theme developers and site administrators who need to
 SJE uses the following open-source software:
 
 * [ACE Editor](https://ace.c9.io/) - A high performance code editor for the web
+* [Split.js](https://split.js.org/) - A lightweight, high-performance splitting library
 
 == Installation ==
 
@@ -65,6 +66,11 @@ SJE Interface
 
 == Changelog ==
 
+= 1.1.0 =
+* Added column resizing functionality using Split Grid
+* Improved user interface flexibility
+* Updated ACE Editor integration for better performance with resizable layout
+
 = 1.0.0 =
 * Initial public release
 * Intuitive user interface for JSON file editing
@@ -73,6 +79,9 @@ SJE Interface
 * Smart folder display feature
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+This update adds a new column resizing feature, allowing for a more flexible editing experience. Update to get the latest improvements!
 
 = 1.0.0 =
 First public version of SJE. Install it to start easily editing your JSON files!

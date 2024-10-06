@@ -28,6 +28,7 @@ SJE is the perfect tool for theme developers and site administrators who need to
 SJE uses the following open-source software:
 
 - [ACE Editor](https://ace.c9.io/) - A high performance code editor for the web
+- [Split.js](https://split.js.org/) - A lightweight, high-performance splitting library
 
 ## Installation
 
@@ -67,6 +68,11 @@ SJE Interface
 ![SJE Interface](assets/images/screenshot-1.png)
 
 ## Changelog
+
+### 1.1.0
+- Added column resizing functionality using Split Grid
+- Improved user interface flexibility
+- Updated ACE Editor integration for better performance with resizable layout
 
 ### 1.0.0
 - Initial public release

@@ -96,7 +96,7 @@ body.tools_page_sje {
 	height: calc(100vh - 135px);
 	align-items: stretch;
 	border-bottom: solid 1px var(--color-border);
-	grid-template-columns: 250px calc(100% - 255px);
+	grid-template-columns: 20% 5px 1fr;
 }
 
 .json-editor-infos {
@@ -105,6 +105,16 @@ body.tools_page_sje {
 	justify-content: center;
 	font-size: 16px;
 	text-align: center;
+}
+
+/* split.js */
+.gutter-col {
+	background-color: var(--color-border);
+	cursor: col-resize;
+}
+
+.gutter-col-1 {
+	grid-column: 2;
 }
 
 /* files list */
