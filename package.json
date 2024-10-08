@@ -14,6 +14,6 @@
   },
   "scripts": {
     "lint": "stylelint admin/css/admin.css --fix --config .stylelintrc-css.json",
-    "bundle": "dir-archiver --src . --dest ../sje-simple-json-editor.zip --exclude .git .gitignore .postcssrc.json .stylelintrc-css.json package.json yarn.lock package-lock.json yarn-error.log node_modules"
+    "bundle": "dir-archiver --src . --dest ../sje-simple-json-editor.zip --exclude .git .gitignore .postcssrc.json .stylelintrc-css.json package.json README.md yarn.lock package-lock.json yarn-error.log node_modules"
   }
 }

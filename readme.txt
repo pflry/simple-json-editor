@@ -1,5 +1,5 @@
 === SJE - Simple JSON Editor ===
-Contributors: paulfleury
+Contributors: Paul Fleury
 Tags: json, editor, theme, development, code
 Requires at least: 5.0
 Tested up to: 6.6.2
@@ -37,7 +37,7 @@ SJE uses the following open-source software:
 == Installation ==
 
 1. Download the plugin zip file and extract it.
-2. Upload the `sje` folder to the `/wp-content/plugins/` directory of your WordPress site.
+2. Upload the `sje-simple-json-editor` folder to the `/wp-content/plugins/` directory of your WordPress site.
 3. Activate the plugin through the 'Plugins' menu in WordPress.
 4. Access the editor via the 'Tools > Simple JSON Editor' menu in your WordPress dashboard.
 
@@ -62,7 +62,7 @@ SJE intelligently displays only folders that contain JSON files. This helps stre
 
 == Screenshots ==
 
-SJE Interface
+1. SJE Simple JSON Editor Interface
 
 == Changelog ==
 
